@@ -1,0 +1,120 @@
+01.环境搭建
+npm install vue-cli -g
+vue init webpack
+
+02.引入vant
+安装vant
+npm i vant -S
+网络不好的时候
+npm install vant --save --registry=https://registry.npm.taobao.org
+
+全局引入 不推荐
+import Vant from 'vant'
+import 'vant/lib/vant-css/index.css'
+Vue.use(vant)
+
+按需引入 推荐
+    npm i babel-plugin-import -D
+
+.babelrc中
+    "plugins": [
+        ["import",{"libraryName":"vant","style":true}]
+    ]
+
+main.js中
+    import {Button} from 'vant'
+
+    Vue.use(Button)
+
+03.移动端适配
+rem:font size of the root element 相对长度单位，相对于根元素html的font-size
+<script>
+    let htmlWidth=document.documentElement.clientWidth || document.body.clientWidth;
+    let htmlDom=document.getElementsByTagName('html')[0];
+    if(htmlWidth>750){
+    htmlWidth=750
+    }
+    htmlDom.style.fontSize = htmlWidth/20 +'px';
+</script>
+
+04.首页布局
+vant按需引入 
+import {Button,Row,Col} from 'vant'
+Vue.use(Button).use(Row).use(Col)
+
+05.按需加载swiper组件
+import { Swipe, SwipeItem } from 'vant';
+Vue.use(Swipe).use(SwipeItem);
+利用Vant实现图片轮播的懒加载
+import { Button, Row, Col ,Search , Swipe , SwipeItem , Lazyload  } from 'vant'
+Vue.use(Button).use(Row).use(Col).use(Search).use(Swipe).use(SwipeItem).use(Lazyload)
+v-lazy="banner.imageUrl"
+
+06.easy-Mock axios
+axios的引入
+npm install --save axios
+在需要使用的页面 import axios from 'axios'
+created(){
+    axios({
+        url: 'https://www.easy-mock.com/mock/5ae2427800247c2aa1efe442/SmileVue/',
+        method: 'get',
+    })
+    .then(response =>{
+        console.log(response)
+    })
+    .catch((error) =>{  
+        console.log(error)   
+    })
+}
+
+07.商品推荐
+vue-awesome-swiper
+安装  npm install vue-awesome-swiper --save
+github地址：https://github.com/surmon-china/vue-awesome-swiper
+不建议全局进入，建议以组件的形式局部引入
+
+import 'swiper/dist/css/swiper.css'
+import { swiper, swiperSlide } from 'vue-awesome-swiper'
+ 
+export default {
+  components: {
+    swiper,
+    swiperSlide
+  }
+}
+swiper的分页，竖屏切换，区滚动（移动端大段文章的上拉下拉）等
+
+楼层组件
+props传值
+延迟返回的数据，在created得不到数据，要在watch
+watch:{
+
+}
+
+项目中过滤器的使用
+Filter
+
+热卖商品
+下拉加载更多
+Vant-list组件的使用
+
+
+后台服务器接口配置文件
+serviceAPI.config.js
+
+
+const BASEURL = "https://www.easy-mock.com/mock/5ae2eeb23fbbf24d8cd7f0b6/SmileVue/"
+const URL = {
+    getShoppingMallInfo:BASEURL+'index',
+    getGoodsInfo:BASEURL+'getGoodsInfo'
+}
+ 
+module.exports = URL
+
+
+import url from '@/serviceAPI.config.js'
+
+axios({
+    url:url.getShoppingMallInfo,
+    method:'get'
+})
