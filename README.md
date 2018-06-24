@@ -18,9 +18,9 @@ npm run build
 npm run build --report
 
 # screenshot
-![image] (https://github.com/yujianli/VueProject/blob/master/src/assets/screenshot/intro_1.jpg)
-![image] (https://github.com/yujianli/VueProject/blob/master/src/assets/screenshot/intro_2.jpg)
-![image] (https://github.com/yujianli/VueProject/blob/master/src/assets/screenshot/intro_3.jpg)
+![image](https://github.com/yujianli/VueProject/blob/master/src/assets/screenshot/intro_1.jpg)
+![image](https://github.com/yujianli/VueProject/blob/master/src/assets/screenshot/intro_2.jpg)
+![image](https://github.com/yujianli/VueProject/blob/master/src/assets/screenshot/intro_3.jpg)
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
