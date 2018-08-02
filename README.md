@@ -33,10 +33,25 @@ Thank `You`.Please `Call` Me `Coder`<br>
 -
 []里加标识性的信息
 -
-#demo  
 ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")  
 
-[我的github](https://github.com/yujianli "yjl")  
+### 项目中的图片
+https://github.com/ 你的用户名 / 你的项目名 / raw / 分支名 / 存放图片的文件夹 / 该文件夹下的图片
+
+### 超链接
+[我的github](https://github.com/yujianli "yjl")
+
+### 给图片加上超链接
+[![baidu]](http://baidu.com)  
+[baidu]:http://www.baidu.com/img/bdlogo.gif "百度Logo"
+
+```
+console.log(111)
+```
+
+```
+console.log(222)
+```
 
 # smilevue
 
