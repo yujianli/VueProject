@@ -1,3 +1,43 @@
+大标题
+=
+=
+中标题
+-
+#一级标题
+##二级标题
+###三级标题
+###四级标题
+#####五级标题
+######六级标题
+这是一段普通文本<br>
+这里换行了
+    Hello,我是来测试的
+    请简单自我介绍一下
+    大家好
+    我是某某
+Thank `You`.Please `Call` Me `Coder`
+*姓名：y
+*别名：j
+*级别1
+  *级别2
+    *级别3
+>数据结构
+>>树
+>>>二叉树
+>>>>平衡二叉树  
+>>>>>满二叉树  
+
+图片
+=
+即 叹号! + 方括号[ ] + 括号( ) 其中叹号里是图片的URL。
+-
+[]里加标识性的信息
+-
+#demo  
+![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")  
+
+[我的github](https://github.com/yujianli "yjl")  
+
 # smilevue
 
 > A Vue.js project
