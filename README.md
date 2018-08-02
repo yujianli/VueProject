@@ -41,9 +41,8 @@ https://github.com/ 你的用户名 / 你的项目名 / raw / 分支名 / 存放
 ### 超链接
 [我的github](https://github.com/yujianli "yjl")
 
-### 给图片加上超链接
-[![baidu]](http://baidu.com)  
-[baidu]:http://www.baidu.com/img/bdlogo.gif "百度Logo"
+代码
+-
 
 ```
 console.log(111)
