@@ -82,7 +82,6 @@ npm run build --report
 
 
 ## GoogleMap+React demos
-
 ### 项目结构
 - public
   - constant.js 常量文件
@@ -94,11 +93,9 @@ npm run build --report
     - marker 可旋转、可拖拽的Marker、默认显示InfoWindow
     - thousandsMarker 性能测试-上千个Markers
     - thousandsPoints 性能测试-上千个点
-
-
 ### 相关网址
-[react-google-maps](https://github.com/tomchentw/react-google-maps)
-[google 地图开发文档](https://developers.google.com/maps/documentation/javascript/tutorial)
+- [react-google-maps](https://github.com/tomchentw/react-google-maps)
+- [google 地图开发文档](https://developers.google.com/maps/documentation/javascript/tutorial)
 
 ### 运行
 - 运行：npm i 下载所需要的依赖包,npm start 运行
